@@ -15,6 +15,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  font-size: 1.125em; /* 18px / 16px */
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
   background-color: #87ceeb; /* sky blue */
+}
+
+.date {
+  font-size: 1.802em; /* 1.802em * 16px = 28.832px */
+  padding: 0.382em 0 0.382em 0; /* Padding top & bottom: 0.382em */
+}
+
+.asteroid-name {
+  
 }
