@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   		<meta charset="utf-8">
+         <script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+   </head>
+   
+   <body>
+      <ul id="main"></ul>
+      <script type="text/javascript">
+         var url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=2016-11-20&end_date=2016-11-27&api_key=8JKWyLMEukb15NV4yy658pIo59dMOpePKRcNywOx";
+         $(document).ready(function() {
+            console.log("on clicked");
+            $.getJSON(url,function(json){
+               console.log("got json");
+               //near eath objects is a dictionary   and it also has a function containing a date and an objecy
+               $.each(json.near_earth_objects, function(date, objs){
+                  $("#main").append("<li><b>"+date+"</b></li>");
+                  //.each is a loop
+                  $.each(objs, function(i, obj) {
+                     $("#main").append("<li> astroid name: "+obj.name+"</li>");
+                  });
+               });
+            });
+         });
+      </script>
+   </body>
+   
+</html>
