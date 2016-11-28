@@ -28,3 +28,11 @@ html {
 ul {
   text-align:center;
 }
+.post {
+  margin-top: 5em; 
+  background-color: #4f5559;
+}
+li {
+  background-color: #4f5559;
+  padding-bottom: 1em;
+}

@@ -5,11 +5,14 @@
                console.log("got json");
             //near eath objects is a dictionary   and it also has a function containing a date and an objecy
             $.each(json.near_earth_objects, function(date, objs){
-               $("#main").append("<li class=date><b>"+date+"</b></li>");
-               //.each is a loop
-            $.each(objs, function(i, obj) {
-                $("#main").append("<div class=asteroid-name><li> astroid name: "+obj.name+"</li></div>");
-         });
-      });
+
+                $("#main").append("<div class=post><li class=date><b>"+date+"</b></li></div>");
+                //.each is a loop
+                $.each(objs, function(i, obj) {
+                    $("#main").append("<li> astroid name: "+obj.name+"</li>");
+                });
+            });
+
+
    });
 });
