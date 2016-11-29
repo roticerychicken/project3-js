@@ -40,10 +40,13 @@ ul {
 }
 
 .post {
-  margin-top: 2.5em; 
-  background-color: #4f5559;
+  margin-top: 3.5em; 
+  background-color: #090f0f;
   border-radius: 1em;
-  margin-bottom: 2.5em;
+  margin-bottom: 5.5em;
+  position: absolute center;
+  margin-right: 6.06em;
+  margin-left:6.06em;
 }
 
 li {
@@ -57,7 +60,7 @@ figure {
 }
 
 .footer {
-  font-size: 1.125em; /* 1.125em * 16px = 18px */
   text-align: center;
+  color:#6d8383;
   padding-bottom: 1.222em; /* 22px = 1 gridline, 18px / 22px = 1.222em */
 }
