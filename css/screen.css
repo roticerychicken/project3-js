@@ -51,6 +51,13 @@ li {
 }
 
 figure {
-  display: block;
+  display: flex;
+  justify-content: center;
   max-width: 100%;
+}
+
+.footer {
+  font-size: 1.125em; /* 1.125em * 16px = 18px */
+  text-align: center;
+  padding-bottom: 1.222em; /* 22px = 1 gridline, 18px / 22px = 1.222em */
 }
