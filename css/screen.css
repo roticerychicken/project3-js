@@ -29,10 +29,11 @@ ul {
   text-align:center;
 }
 .post {
-  margin-top: 5em; 
+  margin-top: 2.5em; 
   background-color: #4f5559;
+  border-radius: 1em;
+  margin-bottom: 2.5em;
 }
 li {
-  background-color: #4f5559;
   padding-bottom: 1em;
 }
