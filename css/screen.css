@@ -20,20 +20,37 @@ html {
   color: #cbd1d4;
 }
 
+h1 {
+  font-size: 3.247em; /* 3.247em * 16em = 51.952px */
+  color: white;
+  font-family: "lucida console", "arial";
+  text-align: center;
+  padding: 1.270em 0 0.847em 0; /* 66px = 3 gridlines, 66px / 51.952px = 1.270em
+                                   44px = 2 gridlines, 44px / 51.952px = 0.847em */
+}
+
 .date {
   font-size: 1.802em; /* 1.802em * 16px = 28.832px */
-  padding: 0.382em 0 0.382em 0; /* Padding top & bottom: 0.382em */
+  padding: 0.382em 0 0.382em 0; /* Padding top & bottom: 0.382em, 11px = 1/2 gridline, 11px / 28.832px = 0.382em */
   font-family: "Helvetica sans serif";
 }
+
 ul {
   text-align:center;
 }
+
 .post {
   margin-top: 2.5em; 
   background-color: #4f5559;
   border-radius: 1em;
   margin-bottom: 2.5em;
 }
+
 li {
   padding-bottom: 1em;
+}
+
+figure {
+  display: block;
+  max-width: 100%;
 }
