@@ -1,18 +1,22 @@
   var url = "https://api.nasa.gov/neo/rest/v1/feed?start_date=2016-11-20&end_date=2016-11-27&api_key=8JKWyLMEukb15NV4yy658pIo59dMOpePKRcNywOx";
-         $(document).ready(function() {
-            console.log("on clicked");
-            $.getJSON(url,function(json){
-               console.log("got json");
-            //near eath objects is a dictionary   and it also has a function containing a date and an objecy
-            $.each(json.near_earth_objects, function(date, objs){
+  $(document).ready(function() {
+    console.log("on clicked");
+    $.getJSON(url,function(json){
+      console.log("got json");
 
-                $("#main").append("<div class=post><li class=date><b>"+date+"</b></li></div>");
-                //.each is a loop
-                $.each(objs, function(i, obj) {
-                    $("#main").append("<li> astroid name: "+obj.name+"</li>");
-                });
-            });
+      var strObj = "";
 
-
+      //near eath objects is a dictionary   and it also has a function containing a date and an objecy
+      $.each(json.near_earth_objects, function(date, objs){
+        
+        strObj += "<li class=date><b>"+date+"</b></li>";
+          //.each is a loop
+          $.each(objs, function(i, obj) {
+            //string append all that text in the parentheses to the string and then at the end of the loop we will put the enire string in a div problem solved biatch
+            strObj += "<li> astroid name: " + obj.name + "</li>";
+          });  
+          $("#main").append("<div class=post>" + strObj + "</div>");
+          strObj = "";
+      });
    });
 });
