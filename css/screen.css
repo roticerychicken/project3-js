@@ -49,3 +49,8 @@ ul {
 li {
   padding-bottom: 1em;
 }
+
+figure {
+  display: block;
+  max-width: 100%;
+}
