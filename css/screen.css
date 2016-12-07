@@ -46,7 +46,7 @@ ul {
   margin-bottom: 5.5em;
   position: absolute center;
   margin-right: 6.06em;
-  margin-left:6.06em;
+  margin-left: 6.06em;
 }
 
 li {
@@ -61,6 +61,8 @@ figure {
 
 .footer {
   text-align: center;
-  color:#6d8383;
-  padding-bottom: 1.222em; /* 22px = 1 gridline, 18px / 22px = 1.222em */
+  font-weight: bold;
+  color: white;
+  background-color: #090f0f;
+  padding: 1.222em 0 1.222em 0;
 }
