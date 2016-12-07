@@ -34,28 +34,29 @@
   $(document).ready(function () { 
 
 
-    
+    var strObj = "";
 
 
       $("#loadData").click(function() {
 
 
-
+       $("#main li").remove();
         
 
 
-        var date1 = document.getElementById("from").value;
-        var date2 = document.getElementById("to").value;
-
-        var url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+date1+"&end_date="+date2+"&api_key=8JKWyLMEukb15NV4yy658pIo59dMOpePKRcNywOx";
-
         
-      var strObj = "";
-      console.log("on clicked");
+        if(document.getElementById("from").value != "" && document.getElementById("to").value != "") { 
+
+          var date1 = document.getElementById("from").value;
+          var date2 = document.getElementById("to").value;
+
+          var url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+date1+"&end_date="+date2+"&api_key=8JKWyLMEukb15NV4yy658pIo59dMOpePKRcNywOx";
+          
+        } 
+
       $.getJSON(url,function(json){
         console.log("got json");
 
-      
         //near eath objects is a dictionary   and it also has a function containing a date and an objecy
         $.each(json.near_earth_objects, function(date, objs){
           
@@ -69,5 +70,6 @@
             strObj = "";
           });
        });
+
     });
   });
