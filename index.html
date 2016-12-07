@@ -6,14 +6,29 @@
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <link rel="stylesheet" media="screen" href="./css/screen.css" />
       <link rel="icon" type="image/ico" href="./img/favicon.ico" />
+
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+       <link rel="stylesheet" href="/resources/demos/style.css">
+
         <script src="http://code.jquery.com/jquery-3.1.1.js"
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
         crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="app.js"></script>
+        
+        
     </head>
     <body>
       <header class="header">
         <h1>Asteroid Watch</h1>
+
+        <label for="from">From</label>
+        <input type="text" id="from" name="from">
+        <label for="to">to</label>
+        <input type="text" id="to" name="to">
+
         <figure>
           <img src="./img/asteroid.png" alt="picture of an asteroid" />
         </figure>
